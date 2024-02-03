@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+.title{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+:root {
+	--bgcolor: rgb(2, 0, 36);
+}
+
+
+body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	background: var(--bgcolor);
+	color: white;
+}
+ul {
+	list-style: none;
+}
+h1 {
+	font-size: 2.1rem;
+	position: relative;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+	width: fit-content;
+	cursor: pointer;
+    padding-bottom: 15px;
+    left: 100px;
+    top: 70px;
+}
+h1:hover {
+	transform: skew(10deg);
+}
+h1::before {
+	content: attr(data-name);
+	position: absolute;
+	top: 0;
+	left: -20px;
+	background: var(--bgcolor);
+	height: 3rem;
+	overflow: hidden;
+	transition: all 300ms ease;
+	padding-left: 20px;
+}
+h1:hover::before {
+	top: -3px;
+	left: 0px;
+	color: hotpink;
+}
+
+h1::after {
+	content: "";
+	height: 4px;
+	width: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: hotpink;
+	transition: all 300ms ease;
+}
+h1:hover::after {
+	width: 120%;
+	outline: 5px solid rgb(2, 0, 36);
+}
+
+._social-links {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translatey(-50%);
+	padding: 1em 0.5em 1em 1em;
+	background: #fafafa;
+	border-radius: 0.5em 0 0 0.5em;
+	box-shadow: -4px 0px 0px hotpink;
+	transition: all 300ms ease;
+}
+
+._social-links:hover {
+	box-shadow: -8px 0px 20px hotpink;
+	padding: 1em;
+}
+
+._links-list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+._social-link a {
+	color: #111;
+	font-size: 1.5rem;
+	transition: all 200ms ease;
+}
+._social-link a:visited {
+	color: #111;
+}
+._social-link a:hover {
+	color: hotpink;
+	font-size: 1.75rem;
+}
+
+#nav{
+    position: absolute;
+	top: 22px;
+	left: 1010px;
+}
+
+#name{
+    font-family: "Permanent Marker";
+    font-weight: lighter;
+    position: absolute;
+    top: 190px;
+    left: 470px;
+    font-size: 2.9rem;
+	text-transform: uppercase;
+	transition: all 300ms ease;
+	width: fit-content;
+	cursor: pointer;
+    text-decoration: underline;
+}
+
+.profileImg{
+    position: absolute;
+    width: 290px;
+    height: 260px;
+    border-radius: 50%;
+    padding: 5px;
+    border: 2px dashed white;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    left: 40px;
+    top: 40px;
+}
+
+.devImg{
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    left: 700px;
+    top: 480px;
+    background-color: antiquewhite;
+}
+
+.description{
+    position: absolute;
+    left: 430px;
+    padding-right: 400px;
+    font-family: "Poppins";
+    text-align: justify;
+    top: 290px;
+}
+
+.headingSub{
+	position: absolute;
+	top: 40px;
+	left: 600px;
+	font-size: 45px;
+}
+
+.projMain{
+	position: absolute;
+	top: 160px;
+	left: 80px;
+}
+
+
+.techSkills{
+	position: relative;
+	padding-bottom: 60px;
+	padding-right: 130px;
+}
+
+.projH{
+	padding-bottom: 10px;
+	font-size: 22px;
+	color: green;
+}
+
+.projMain{
+	margin-top: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+p{
+	padding-right: 80px;
+	text-align: justify;
+}
+
+
+.button-9 {
+  appearance: button;
+  backface-visibility: hidden;
+  background-color: #405cf5;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+  font-size: 100%;
+  height: 35px;
+  line-height: 1.15;
+  margin: 12px 0 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0 25px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transform: translateZ(0);
+  transition: all .2s,box-shadow .08s ease-in;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 220px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.button-9:disabled {
+  cursor: default;
+}
+
+.button-9:focus {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+
+.buttonDiv{
+	margin-left: 300px;
+	margin-top: 10px;
+}
+
+.technologies{
+	color: greenyellow;
+	font-size: 14px;
+}
+
+.skillsTop{
+	font-weight: bolder;
+	font-size: 22px;
+	margin-left: 10px;
+}
+
+.backBtn{
+	position: absolute;
+	top: 47px;
+	left: 78px;
+	width: 60px;
+}
+
+.progLangs{
+	width: 75px;
+
+}
+
+/*.techSkillsImgDiv{
+	margin-top: 30px;
+	background-color: #fafafa;
+	padding-right: 30px;
+	padding-left: 20px;
+}*/
+
+.langClass{
+	margin-left: 40px;
+	margin-top: 30px;
+}
+
+li{
+	margin-bottom: 10px;
+}
+
+.proj{
+	margin-bottom: 70px;
+}
+
+#sk{
+	display:flex;
+}
+
+#ed{
+	display: flex;
+	margin-left: 110px;
+}
+
+.skdd{
+	padding-left: 10px;
+	font-weight: lighter;
+	font-size: 18px;
+}
+
+.skde{
+	padding-left: 7px;
+	font-size: 14px;
+}
+
+.skdef{
+	padding-left: 7px;
+	font-size: 18px;	
+}
+
+#ss{
+	padding-left: 50px;
+	font-size: 14px;
+}
+
+#cont{
+	margin-bottom: 15px;
+}
+
+.gh{
+	margin-left: 10px;
+}
+
+#eddd{
+	margin-left: 110px;
+}
+
+
+
+
+
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    h2 {
+		left: 50px;
+        top: 20px;
+    }
+
+    #name {
+        position: absolute;
+		left: 220px;
+        top: 175px;
+		right: 0px;
+        transform: translateX(-50%);
+		font-size: 17px;
+    }
+
+    .profileImg {
+        width: 120px;
+		height: 120px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+
+    .description {
+		font-size: 14px;
+		position: absolute;
+		top: 220px;
+		left: 70px;
+		width: 85%;
+    }
+
+    #nav {
+        left: 24%;
+        transform: translateX(-50%);
+        top: 320px;
+		display: flex;
+    }
+
+	h1{
+		font-size: 12px;
+		margin-left: 25px;
+	}
+
+	.projH{
+		font-size: 13px;
+	}
+
+	.projPara{
+		font-size: 11px;
+		margin-right: 0px;
+	}
+
+	.projMain{
+		margin-left: 0px;
+	}
+	.technologies{
+		font-size: 11px;
+	}
+
+	.buttonDiv{
+		margin-left: 50px;
+	}
+
+	.button-9{
+		width: 150px;
+		font-size: 11px;
+	}
+
+	.headingSub{
+		font-size: 35px;
+		position: absolute;
+		top: 50px;
+		left: 180px;
+	}
+
+	#des{
+		font-size: 11px;
+		position: absolute;
+		top: 220px;
+		left: 30px;
+	}
+
+	#sk{
+		display: block;
+	}
+
+	.skillsTop{
+		font-size: 16px;
+	}
+
+	li{
+		font-size: 11px;
+	}
+
+	#ed{
+		display: block;
+		margin-left: 0px;
+	}
+
+	.skdd{
+		font-size: 13px;
+	}
+
+	.skde{
+		font-size: 10px;
+	}
+
+	.skdef{
+		font-size: 13px;
+	}
+
+	#cont{
+		font-size: 10px;
+		margin-left: 0px;
+	}
+
+	#eddd{
+		margin-left: 0px;
+	}
+
+	.contLinks{
+		margin-right: 5px;
+		margin-left: 0px
+	}
+
+	#b9{
+		margin-top: 15px;
+		width: 100px;
+	}
+
+}
+
