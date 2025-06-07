@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills - Chanupa Athsara</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(120deg, #0f0f0f, #1a1a1a);
+      color: #f1f1f1;
+    }
+    .glow {
+      text-shadow: 0 0 8px #00ffe1, 0 0 16px #00ffe1;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black glass shadow-lg fixed w-full z-50">
+    <h1 class="text-xl font-bold text-teal-400">Chanupa Athsara</h1>
+    <ul class="flex gap-6 text-sm text-gray-300">
+      <li><a href="index.html" class="hover:text-white">Home</a></li>
+      <li><a href="skills.html" class="hover:text-white font-semibold text-white">Skills</a></li>
+      <li><a href="projects.html" class="hover:text-white">Projects</a></li>
+      <li><a href="education.html" class="hover:text-white">Education</a></li>
+      <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      <li><a href="about.html" class="hover:text-white">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-6 pt-24 pb-16">
+    <h1 class="text-4xl md:text-5xl font-bold glow text-center mb-12" data-aos="fade-down">My Skills</h1>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Skill item example -->
+      <div class="glass p-6 rounded-lg" data-aos="fade-right">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-400">Web Development (HTML / CSS / JavaScript)</h3>
+        <div class="w-full bg-gray-800 rounded-full h-6 overflow-hidden">
+          <div class="bg-teal-400 h-6 text-black font-bold text-center" style="width: 95%;">95%</div>
+        </div>
+      </div>
+
+      <div class="glass p-6 rounded-lg" data-aos="fade-left">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-400">JavaScript & PHP</h3>
+        <div class="w-full bg-gray-800 rounded-full h-6 overflow-hidden">
+          <div class="bg-blue-500 h-6 text-black font-bold text-center" style="width: 90%;">90%</div>
+        </div>
+      </div>
+
+      <div class="glass p-6 rounded-lg" data-aos="fade-right">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-400">Python & OpenCV</h3>
+        <div class="w-full bg-gray-800 rounded-full h-6 overflow-hidden">
+          <div class="bg-yellow-400 text-black h-6 font-bold text-center" style="width: 85%;">85%</div>
+        </div>
+      </div>
+
+      <div class="glass p-6 rounded-lg" data-aos="fade-left">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-400">Java, C, C++, Kotlin</h3>
+        <div class="w-full bg-gray-800 rounded-full h-6 overflow-hidden">
+          <div class="bg-red-600 h-6 text-black font-bold text-center" style="width: 80%;">80%</div>
+        </div>
+      </div>
+
+      <div class="glass p-6 rounded-lg" data-aos="fade-right">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-400">MERN Stack (MongoDB, Express, React, Node)</h3>
+        <div class="w-full bg-gray-800 rounded-full h-6 overflow-hidden">
+          <div class="bg-blue-700 h-6 text-black font-bold text-center" style="width: 88%;">88%</div>
+        </div>
+      </div>
+
+      <div class="glass p-6 rounded-lg" data-aos="fade-left">
+        <h3 class="text-2xl font-semibold mb-4 text-teal-400">Databases (MySQL, MSSQL, MongoDB)</h3>
+        <div class="w-full bg-gray-800 rounded-full h-6 overflow-hidden">
+          <div class="bg-gray-500 h-6 text-black font-bold text-center" style="width: 85%;">85%</div>
+        </div>
+      </div>
+
+      <div class="glass p-6 rounded-lg" data-aos="fade-up" >
+        <h3 class="text-2xl font-semibold mb-4 text-teal-400">Tools & Technologies</h3>
+        <p class="text-gray-300">Git, GitHub, Figma, Photoshop, Postman</p>
+      </div>
+
+      <div class="glass p-6 rounded-lg" data-aos="fade-up" >
+        <h3 class="text-2xl font-semibold mb-4 text-teal-400">Soft Skills</h3>
+        <p class="text-gray-300">Leadership, Problem Solving, Project Management</p>
+      </div>
+
+      <div class="glass p-6 rounded-lg md:col-span-2" data-aos="fade-up">
+        <h3 class="text-3xl font-bold mb-6 text-teal-400">Certifications</h3>
+        <ul class="list-disc list-inside text-gray-300 space-y-2">
+          <li>Python Programming – University of Moratuwa</li>
+          <li>Web Designing – University of Moratuwa</li>
+          <li>Computer Application – E Nenasala</li>
+          <li>JavaScript Essentials – Cisco Networking Academy</li>
+          <li>Python Essentials – Cisco Networking Academy</li>
+          <li>Agile Project Management – HP Life</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-900 text-center text-gray-400 text-sm">
+    &copy; 2025 Chanupa Athsara. All rights reserved.
+  </footer>
+
+  <!-- AOS Animation Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
