@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Chanupa Athsara</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #f1f1f1;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    input, textarea {
+      background-color: rgba(255, 255, 255, 0.07);
+      border: none;
+      color: white;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black glass fixed top-0 w-full z-50">
+    <h1 class="text-xl font-bold text-teal-400">Chanupa Athsara</h1>
+    <ul class="flex gap-6 text-sm text-gray-300">
+      <li><a href="home.html" class="hover:text-white">Home</a></li>
+      <li><a href="skills.html" class="hover:text-white">Skills</a></li>
+      <li><a href="projects.html" class="hover:text-white">Projects</a></li>
+      <li><a href="education.html" class="hover:text-white">Education</a></li>
+      <li><a href="contact.html" class="text-white underline">Contact</a></li>
+      <li><a href="about.html" class="hover:text-white">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <main class="pt-32 px-6 md:px-20 lg:px-48 pb-20" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-teal-400 mb-6">Contact Me</h2>
+    <p class="text-gray-300 mb-8">
+      I’d love to hear from you! Whether you're curious about my work, want to collaborate, or just want to say hello — let's talk.
+    </p>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Contact Form -->
+      <form class="glass p-6 rounded-lg space-y-4">
+        <div>
+          <label for="name" class="block text-teal-300 font-semibold">Name</label>
+          <input type="text" id="name" class="w-full p-2 rounded mt-1" placeholder="Your Name" required>
+        </div>
+        <div>
+          <label for="email" class="block text-teal-300 font-semibold">Email</label>
+          <input type="email" id="email" class="w-full p-2 rounded mt-1" placeholder="Your Email" required>
+        </div>
+        <div>
+          <label for="message" class="block text-teal-300 font-semibold">Message</label>
+          <textarea id="message" rows="4" class="w-full p-2 rounded mt-1" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="bg-teal-500 hover:bg-teal-400 text-black font-bold px-4 py-2 rounded shadow-lg transition duration-200">Send Message</button>
+      </form>
+
+      <!-- Contact Info -->
+      <div class="glass p-6 rounded-lg">
+        <h3 class="text-2xl text-teal-300 font-bold mb-4">Contact Information</h3>
+        <p class="mb-2"><strong>📍 Location:</strong> Kadawatha, Sri Lanka</p>
+        <p class="mb-2"><strong>📞 Mobile:</strong> <a href="tel:+94766992183" class="text-teal-400 hover:underline">+94 76 699 2183</a></p>
+        <p class="mb-2"><strong>📧 Email:</strong> <a href="mailto:athsara141@gmail.com" class="text-teal-400 hover:underline">athsara141@gmail.com</a></p>
+        <p class="mb-2"><strong>🔗 GitHub:</strong> <a href="https://github.com/chanupa2002" target="_blank" class="text-teal-400 hover:underline">github.com/chanupa2002</a></p>
+        <p><strong>🔗 LinkedIn:</strong> <a href="https://linkedin.com/in/chanupa-athsara" target="_blank" class="text-teal-400 hover:underline">linkedin.com/in/chanupa-athsara</a></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-gray-800 text-sm text-gray-400">
+    &copy; 2025 Chanupa Athsara. All rights reserved.
+  </footer>
+
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
+</html>

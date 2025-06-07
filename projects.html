@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Chanupa Athsara</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(120deg, #0f0f0f, #1a1a1a);
+      color: #f1f1f1;
+    }
+    .glow {
+      text-shadow: 0 0 8px #00ffe1, 0 0 16px #00ffe1;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- Navigation -->
+  <nav
+    class="flex justify-between items-center px-6 py-4 bg-black glass shadow-lg fixed w-full z-50"
+  >
+    <h1 class="text-xl font-bold text-teal-400 glow">Chanupa Athsara</h1>
+    <ul class="flex gap-6 text-sm text-gray-300">
+      <li>
+        <a href="home.html" class="hover:text-white">Home</a>
+      </li>
+      <li>
+        <a href="skills.html" class="hover:text-white">Skills</a>
+      </li>
+      <li>
+        <a href="projects.html" class="hover:text-white font-bold text-white glow"
+          >Projects</a
+        >
+      </li>
+      <li>
+        <a href="education.html" class="hover:text-white">Education</a>
+      </li>
+      <li>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+      </li>
+      <li>
+        <a href="about.html" class="hover:text-white">About</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="pt-24 max-w-7xl mx-auto px-6 pb-16" data-aos="fade-up">
+    <h1 class="text-4xl font-bold mb-12 text-teal-400 glow text-center">
+      Projects
+    </h1>
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+    >
+      <!-- Project 1 -->
+      <article
+        class="glass rounded-lg shadow-lg overflow-hidden flex flex-col"
+        data-aos="fade-up"
+        data-aos-delay="100"
+      >
+        <img
+          src="images/insurance.jpg"
+          alt="Insurance Management System"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6 flex flex-col flex-grow">
+          <h2 class="text-xl font-semibold mb-2 text-teal-300">
+            Wellness First - Insurance Management System
+          </h2>
+          <p class="text-gray-300 flex-grow mb-4">
+            Led development of a PHP/MySQL insurance platform with user
+            registration, claims, payments, feedback, and admin notices.
+          </p>
+          <a
+            href="https://github.com/chanupa2002/Insurance-Management-System"
+            target="_blank"
+            class="mt-auto inline-block px-4 py-2 bg-teal-500 text-black font-bold rounded-full text-center hover:bg-teal-400 transition"
+            >View Project</a
+          >
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article
+        class="glass rounded-lg shadow-lg overflow-hidden flex flex-col"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <img
+          src="images/pos.jpg"
+          alt="POS System"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6 flex flex-col flex-grow">
+          <h2 class="text-xl font-semibold mb-2 text-teal-300">
+            POS & Inventory Management System
+          </h2>
+          <p class="text-gray-300 flex-grow mb-4">
+            MERN stack system featuring real-time inventory, automated
+            invoicing, and secure sales tracking with reports.
+          </p>
+          <a
+            href="https://github.com/chanupa2002/POS_with_IMS"
+            target="_blank"
+            class="mt-auto inline-block px-4 py-2 bg-teal-500 text-black font-bold rounded-full text-center hover:bg-teal-400 transition"
+            >View Project</a
+          >
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article
+        class="glass rounded-lg shadow-lg overflow-hidden flex flex-col"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <img
+          src="images/attendance.jpg"
+          alt="Smart Attendance System"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6 flex flex-col flex-grow">
+          <h2 class="text-xl font-semibold mb-2 text-teal-300">
+            AI-Based Smart Attendance & HR System
+          </h2>
+          <p class="text-gray-300 flex-grow mb-4">
+            Python and Flask-based system that automates attendance, tracks
+            hours, and generates salary reports using face recognition.
+          </p>
+          <a
+            href="https://github.com/chanupa2002/smart_attendance_hr_system"
+            target="_blank"
+            class="mt-auto inline-block px-4 py-2 bg-teal-500 text-black font-bold rounded-full text-center hover:bg-teal-400 transition"
+            >View Project</a
+          >
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article
+        class="glass rounded-lg shadow-lg overflow-hidden flex flex-col"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
+        <img
+          src="images/restaurant.jpg"
+          alt="Restaurant System"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6 flex flex-col flex-grow">
+          <h2 class="text-xl font-semibold mb-2 text-teal-300">
+            Restaurant Order & Reservation System
+          </h2>
+          <p class="text-gray-300 flex-grow mb-4">
+            PHP-based website for "The Outer Clove" allowing menu browsing,
+            reservations, and admin reservation management.
+          </p>
+          <a
+            href="https://github.com/chanupa2002/resturant_management_system_and_website"
+            target="_blank"
+            class="mt-auto inline-block px-4 py-2 bg-teal-500 text-black font-bold rounded-full text-center hover:bg-teal-400 transition"
+            >View Project</a
+          >
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article
+        class="glass rounded-lg shadow-lg overflow-hidden flex flex-col"
+        data-aos="fade-up"
+        data-aos-delay="500"
+      >
+        <img
+          src="images/tastefood.jpg"
+          alt="Taste Food System"
+          class="w-full h-48 object-cover"
+        />
+        <div class="p-6 flex flex-col flex-grow">
+          <h2 class="text-xl font-semibold mb-2 text-teal-300">
+            Taste Food - Self Ordering & Billing System
+          </h2>
+          <p class="text-gray-300 flex-grow mb-4">
+            Web-based ordering system for touch screens where customers can
+            order and print bills automatically via kiosk devices.
+          </p>
+          <a
+            href="https://github.com/chanupa2002/Taste-Food-Ordering-Billing-system"
+            target="_blank"
+            class="mt-auto inline-block px-4 py-2 bg-teal-500 text-black font-bold rounded-full text-center hover:bg-teal-400 transition"
+            >View Project</a
+          >
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer
+    class="py-6 bg-gray-800 text-center text-sm text-gray-400 fixed bottom-0 w-full"
+  >
+    &copy; 2025 Chanupa Athsara. All rights reserved.
+  </footer>
+
+  <!-- AOS Animation Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

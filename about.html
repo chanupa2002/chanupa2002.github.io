@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Chanupa Athsara</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #f1f1f1;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .glow {
+      text-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center px-6 py-4 bg-black glass fixed top-0 w-full z-50">
+    <h1 class="text-xl font-bold text-teal-400">Chanupa Athsara</h1>
+    <ul class="flex gap-6 text-sm text-gray-300">
+      <li><a href="home.html" class="hover:text-white">Home</a></li>
+      <li><a href="skills.html" class="hover:text-white">Skills</a></li>
+      <li><a href="projects.html" class="hover:text-white">Projects</a></li>
+      <li><a href="education.html" class="hover:text-white">Education</a></li>
+      <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+      <li><a href="about.html" class="text-white underline">About</a></li>
+    </ul>
+  </nav>
+
+  <!-- About Section -->
+  <main class="mt-28 px-6 md:px-20 lg:px-48 py-12 space-y-12" data-aos="fade-up">
+    <section>
+      <h2 class="text-4xl font-bold text-teal-400 glow mb-4">About Me</h2>
+      <p class="text-lg text-gray-300">
+        I’m <strong class="text-white">Chanupa Athsara</strong>, a Software Engineering undergraduate at SLIIT (GPA: 3.84). Passionate about building full-stack web systems and AI-powered applications that solve real-world problems.
+      </p>
+    </section>
+
+    <section>
+      <h3 class="text-2xl text-teal-300 font-semibold mb-2">Professional Philosophy</h3>
+      <p class="text-gray-300">
+        I believe in blending creativity with logic. My approach to development emphasizes scalability, UI/UX precision, and practical impact. I love collaborating, leading with integrity, and staying ahead by learning emerging technologies.
+      </p>
+    </section>
+
+    <section>
+      <h3 class="text-2xl text-teal-300 font-semibold mb-4">Interests & Achievements</h3>
+      <ul class="list-disc list-inside space-y-2 text-gray-300">
+        <li>🎓 Chairman – Mother Sri Lanka Society, Royal College</li>
+        <li>♟️ U16 All-Island Chess Champion (Captain)</li>
+        <li>🏊 Provincial Swimming Medalist</li>
+        <li>🎾 Inter-School Tennis Competitor</li>
+        <li>🎶 Music Producer with releases on Spotify, iTunes, YouTube, Deezer</li>
+        <li>💼 IT Coordinator – Avon Groups (Pvt) Ltd (Sep 2022 – Apr 2025)</li>
+        <li>🤝 Director of Information Management – Old Royalists Engineering Association</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="text-2xl text-teal-300 font-semibold mb-2">Let’s Connect</h3>
+      <p class="text-gray-300">I'm always open to learning, collaboration, or just connecting with like-minded developers. Reach out via the <a href="contact.html" class="text-teal-400 underline">Contact</a> page.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-gray-800 text-sm text-gray-400">
+    &copy; 2025 Chanupa Athsara. All rights reserved.
+  </footer>
+
+  <!-- AOS Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
+</html>
