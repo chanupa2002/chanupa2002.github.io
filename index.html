@@ -82,14 +82,16 @@
             display: flex;
             flex-direction: column;
             gap: 8px;
+            align-items: center;
         }
 
         .brand-name {
             text-transform: uppercase;
             letter-spacing: 0.18em;
-            font-size: 0.75rem;
+            font-size: 0.9rem;
             color: var(--muted);
             font-weight: 500;
+            text-align: center;
         }
 
         .brand-main {
@@ -937,8 +939,22 @@
     <!-- LEFT SIDEBAR -->
     <aside class="sidebar">
         <div class="brand-block">
+
+            <img src="image.png" 
+                alt="description"
+                style="
+                    width: 90px;
+                    height: 90px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 1px solid #666;
+                    display: block;
+                    align-content: center;
+                ">
+                <br>
+
             <div class="brand-name">Chanupa Athsara</div>
-            <!-- <img src="image.png" alt="description" width="300"> -->
+
         </div>
 
         <nav class="side-nav">
@@ -999,7 +1015,7 @@
                         Full-Stack Developer | AI Enthusiast
                     </div>
                     <p class="hero-text">
-                        Motivated Data Science undergraduate at SLIIT exploring AI/ML, data analytics,
+                        Motivated Data Science undergraduate at SLIIT exploring AI/ML, data analytics
                         and full-stack development. Passionate about learning new technologies and
                         building innovative solutions.
                     </p>
@@ -1253,7 +1269,7 @@
                     </div>
                     <h3 class="project-title">AI-based Smart Attendance & HR System</h3>
                     <p class="project-description">
-                        AI-driven system that automates attendance management and HR functions by tracking
+                        AI driven system that automates attendance management and HR functions by tracking
                         employee hours and generating monthly salaries with facial recognition technology.
                     </p>
                     <div class="tech-stack">
@@ -1264,36 +1280,136 @@
                     </div>
                 </article>
 
-                <!-- Project 2 -->
+                 <!-- Project 2 -->
                 <article class="project-card">
                     <div class="project-top">
                         <div class="project-icon">
                             <i class="fas fa-folder"></i>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/chanupa2002/Insurance-Management-System" target="_blank" aria-label="GitHub">
+                            <a href="https://github.com/chanupa2002/real-time-Human-Motion-Detection-SMS-Alert-System" target="_blank" aria-label="GitHub">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://www.linkedin.com/posts/chanupa-athsara-4a78a8236_wellness-first-insurance-management-activity-7205628144353968128-HYIL?utm_source=share&utm_medium=member_desktop"
+                            <a href="https://www.linkedin.com/posts/chanupa-athsara-4a78a8236_excited-to-share-this-real-time-human-activity-7325343014967488512-Juzd?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrdYr8BiQeccVGQxG2RCJvc-X6OzXWsSXw"
                                target="_blank" aria-label="LinkedIn case study">
                                 <i class="fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
-                    <h3 class="project-title">“Wellness First” Insurance Management System</h3>
+                    <h3 class="project-title">Real-time Human Motion Detection & SMS Alert System</h3>
                     <p class="project-description">
-                        Comprehensive insurance management system with customer registration, admin approval,
-                        payment processing, and claim management features, including an analytics dashboard.
+                        AI powered security system detects human motion in real time, analyzes video with MobileNet SSD and OpenCV, and sends instant SMS alerts 
+                        via Infobip, reducing false alarms and enhancing safety for surveillance, smart homes and IoT environments.
                     </p>
                     <div class="tech-stack">
-                        <span class="tech-pill">PHP</span>
-                        <span class="tech-pill">MySQL</span>
-                        <span class="tech-pill">JavaScript</span>
-                        <span class="tech-pill">Chart.js</span>
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">OpenCv</span>
+                        <span class="tech-pill">MobileNet SSD</span>
+                        <span class="tech-pill">Infobip SMS Api</span>
                     </div>
                 </article>
 
                 <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/chanupa2002/flood-support-analytics" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/chanupa-athsara-4a78a8236_this-project-is-my-contribution-to-resq-hub-activity-7402716218450964480-9GLa?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrdYr8BiQeccVGQxG2RCJvc-X6OzXWsSXw"
+                               target="_blank" aria-label="LinkedIn case study">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://flood-support-analytics.vercel.app/"
+                               target="_blank" aria-label="LinkedIn case study">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            <a href="https://resq-five.vercel.app/citizen"
+                               target="_blank" aria-label="LinkedIn case study">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Flood Support Analytics Dashboard for ResQ Hub</h3>
+                    <p class="project-description">
+                        This project contributes to ResQ Hub, a production-ready emergency response system for Sri Lanka. I built data cleaning and preprocessing 
+                        pipelines for historical flood requests and an interactive dashboard to visualize patterns, trends, and operational insights.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">Folium</span>
+                        <span class="tech-pill">Plotly</span>
+                        <span class="tech-pill">Pandas</span>
+                        <span class="tech-pill">Scikit-learn</span>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/chanupa2002/IRWA_GP" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/chanupa-athsara-4a78a8236_paperforge-rethinking-how-we-explore-activity-7396214324895240192-BhD3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrdYr8BiQeccVGQxG2RCJvc-X6OzXWsSXw"
+                               target="_blank" aria-label="LinkedIn case study">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">PaperForge: AI Powered Faster Research Assistant</h3>
+                    <p class="project-description">
+                        AI powered research assistant that helps students find and understand papers, using Semantic Scholar for search, NLP pipelines for analysis, and a ranking model plus summaries, 
+                        classification, and comparisons to surface key work and reveal research gaps.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">FastAPI(Python)</span>
+                        <span class="tech-pill">ReactJS</span>
+                        <span class="tech-pill">Playwright</span>
+                        <span class="tech-pill">TF-IDF</span>
+                        <span class="tech-pill">NLTK</span>
+                        <span class="tech-pill">SMTP</span>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/chanupa2002/sentiment_analysis" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/chanupa-athsara-4a78a8236_hybrid-sentiment-analysis-pipeline-llm-activity-7401956619447951360-iyZ-?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrdYr8BiQeccVGQxG2RCJvc-X6OzXWsSXw"
+                               target="_blank" aria-label="LinkedIn case study">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Hybrid Sentiment Analysis Pipeline</h3>
+                    <p class="project-description">
+                        MERN stack application for point-of-sale and inventory management with real-time
+                        updates, sales reporting, and predictive stock management using ML algorithms.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Python</span>
+                        <span class="tech-pill">NLP</span>
+                        <span class="tech-pill">LLM</span>
+                        <span class="tech-pill">REST/JSON</span>
+                        <span class="tech-pill">Custom Vectorizers</span>
+                        <span class="tech-pill">Logistic Regression</span>
+                    </div>
+                </article>
+
+                 <!-- Project 6 -->
                 <article class="project-card">
                     <div class="project-top">
                         <div class="project-icon">
@@ -1317,10 +1433,94 @@
                     <div class="tech-stack">
                         <span class="tech-pill">React.js</span>
                         <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">Express.js</span>
                         <span class="tech-pill">MongoDB</span>
                         <span class="tech-pill">Redux</span>
                     </div>
                 </article>
+
+                <!-- Project 7 -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/chanupa2002/BudgetMate" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/chanupa-athsara-4a78a8236_excited-to-showcase-budgetmate-an-android-activity-7322576999359676417-qHF3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrdYr8BiQeccVGQxG2RCJvc-X6OzXWsSXw"
+                               target="_blank" aria-label="LinkedIn case study">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">BudgetMate- Finance Tracking Android App</h3>
+                    <p class="project-description">
+                        Android finance app to track income/expenses, set monthly budgets and get overspending alerts. Features secure auth, categorized transactions, monthly filters, and persistent storage, built with Java/Kotlin in Android Studio for clean, 
+                        fintech ready mobile experiences.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">Android Studio</span>
+                        <span class="tech-pill">Java/Kotlin</span>
+                        <span class="tech-pill">XML</span>
+                    </div>
+                </article>
+
+                <!-- Project 8 -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/chanupa2002/Insurance-Management-System" target="_blank" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/posts/chanupa-athsara-4a78a8236_wellness-first-insurance-management-activity-7205628144353968128-HYIL?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrdYr8BiQeccVGQxG2RCJvc-X6OzXWsSXw"
+                               target="_blank" aria-label="LinkedIn case study">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Wellness First- Insurance Management System</h3>
+                    <p class="project-description">
+                        Customers register by purchasing plans, make monthly payments and view payment history. Admins approve registrations, manage insurance managers, handle feedback and publish notices, while customers and 
+                        managers can request/handle claims and manage their own profiles.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">PHP</span>
+                        <span class="tech-pill">MYSQL</span>
+                    </div>
+                </article>
+
+                <!-- Project 9 -->
+                <article class="project-card">
+                    <div class="project-top">
+                        <div class="project-icon">
+                            <i class="fas fa-folder"></i>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/posts/chanupa-athsara-4a78a8236_introducing-abc-institute-student-management-activity-7157755973284110336-5_zx?utm_source=share&utm_medium=member_desktop&rcm=ACoAADrdYr8BiQeccVGQxG2RCJvc-X6OzXWsSXw"
+                               target="_blank" aria-label="LinkedIn case study">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Student Management System</h3>
+                    <p class="project-description">
+                        Admin can add/remove students, record monthly class fee payments, and view complete student profiles. It centralizes student data and 
+                        payment tracking, with future plans to add online payments, attendance tracking and exam result management.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-pill">React.js</span>
+                        <span class="tech-pill">Node.js</span>
+                        <span class="tech-pill">Express.js</span>
+                        <span class="tech-pill">MongoDB</span>
+                    </div>
+                </article>
+
+
             </div>
         </section>
 
